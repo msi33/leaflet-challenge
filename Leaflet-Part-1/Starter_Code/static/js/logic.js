@@ -13,14 +13,14 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(myMap);
 
 
-// // Define the URL for your GeoJSON data
-// const url = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson';
+// Define the URL for your GeoJSON data
+const url = 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson';
 
-// // Fetch and add GeoJSON data to the map
-// d3.json(url).then((data) => {
-//     // console.log(data)
-//     createFeatures(data.features);
-// });
+// Fetch and add GeoJSON data to the map
+d3.json(url).then((data) => {
+    // console.log(data)
+    createFeatures(data.features);
+});
 
 
 
