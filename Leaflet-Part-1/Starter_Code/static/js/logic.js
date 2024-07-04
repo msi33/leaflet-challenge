@@ -64,20 +64,20 @@ function createCustomMarker(feature, latlng) {
     return marker;
 }
 
-// // Function to determine marker size based on earthquake magnitude
-// function getRadius(magnitude) {
-//     return magnitude * 4;  // Adjust multiplier as necessary for visibility
-// }
+// Function to determine marker size based on earthquake magnitude
+function getRadius(magnitude) {
+    return magnitude * 4;  // Adjust multiplier as necessary for visibility
+}
 
-// // Function to determine color based on depth
-// function getColor(depth) {
-//     return depth > 90 ? '#FF0000' : // deep Red
-//            depth > 70 ? '#FF4500' : // Orange Red
-//            depth > 50 ? '#FF8C00' : // Dark Orange
-//            depth > 30 ? '#FFD700' : // Light Yellow
-//            depth > 10 ? '#B5E61D' : // Light Olive
-//                         '#39FF14' ; // Green for the shallowest
-// }
+// Function to determine color based on depth
+function getColor(depth) {
+    return depth > 90 ? '#FF0000' : // deep Red
+           depth > 70 ? '#FF4500' : // Orange Red
+           depth > 50 ? '#FF8C00' : // Dark Orange
+           depth > 30 ? '#FFD700' : // Light Yellow
+           depth > 10 ? '#B5E61D' : // Light Olive
+                        '#39FF14' ; // Green for the shallowest
+}
 
 // // Function to add a legend to the map
 // function addLegend() {
