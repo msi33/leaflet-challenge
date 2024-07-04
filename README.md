@@ -22,3 +22,25 @@ The project is divided into two parts
 
 Part 1: Create the Earthquake Visualization
 The first activity was to visuzaliza an earthquake dataset following these steps
+
+1. Data Acquisition 
+The USGS gather data and stored different data types and in different format. The data get updated after every five minutes. The site was visited and data for the past 7 days ("All Earthquakes from the Past 7 Days" ) was select to be used for visualization.
+
+GeoJSON Sampleimage in image folder shows the summary page up page visitation. The URL directed to "All Earthquakes from the Past 7 Days" was used to pull the data in JSON format as shown imgae part_7_Days_Json image. 
+
+![alt text](image-1.png)
+
+Using Leaflet, a map was initialize to create map that shows all the earthquakes from the data. The map is based on longitude and latitude of place with earthquakes.
+
+1. Subsequently data markers were impose on the map to show the magnitude of the earthquake using marker sizes and depth by color. Earthquakes with higher magnitudes appear larger, and earthquakes with greater depth appear darker in color.
+
+2. When Hovering over map the marker will display a tooltip with the earthquake magnitude, location, and depth.
+
+3. Popups were included to provide additional information about the earthquake when its associated marker is clicked.
+
+4. A legend was added for easy of reading and understanding  
+
+Example of the map visualization: Part 1 Visualization
+Part 2: Gather and Plot More Data (Optional)
+Note: This part was not completed and will be completed at a later date.
+
