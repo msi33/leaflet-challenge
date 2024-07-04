@@ -43,10 +43,13 @@ Using Leaflet, a map was initialize to create map that shows all the earthquakes
 
 3. Popups were included to provide additional information about the earthquake when its associated marker is clicked.
 
-4. A legend was added for easy of reading and understanding
+4. A legend was added for easy of reading and understanding. Example of the map visualization: Part 1 Visualization
 
    ![alt text](Leaflet-Part-1/Part_1_visualization_map.png)
 
-Example of the map visualization: Part 1 Visualization
+
+
 Part 2: Gather and Plot More Data (Optional)
+
+
 Note: This part was not completed and will be completed at a later date.
