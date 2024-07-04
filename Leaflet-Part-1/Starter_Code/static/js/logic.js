@@ -40,18 +40,18 @@ function onEachFeature(feature, layer) {
     layer.bindPopup(`<h3>${feature.properties.place}</h3><hr><p>${new Date(feature.properties.time)}</p>`);
 }
 
-// // Function to create a customized marker for each earthquake feature
-// function createCustomMarker(feature, latlng) {
+// Function to create a customized marker for each earthquake feature
+function createCustomMarker(feature, latlng) {
     
-//     // Create the marker
-//     var marker = L.circleMarker(latlng, {
-//         radius: getRadius(feature.properties.mag),
-//         fillColor: getColor(feature.geometry.coordinates[2]),
-//         color: "#000",
-//         weight: 1,
-//         opacity: 1,
-//         fillOpacity: 0.7
-//     });
+    // Create the marker
+    var marker = L.circleMarker(latlng, {
+        radius: getRadius(feature.properties.mag),
+        fillColor: getColor(feature.geometry.coordinates[2]),
+        color: "#000",
+        weight: 1,
+        opacity: 1,
+        fillOpacity: 0.7
+    });
 
 //     // Bind a tooltip to the marker
 //     marker.bindTooltip(
