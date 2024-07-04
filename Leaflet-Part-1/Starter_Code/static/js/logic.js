@@ -66,7 +66,7 @@ function createCustomMarker(feature, latlng) {
 
 // Function to determine marker size based on earthquake magnitude
 function getRadius(magnitude) {
-    return magnitude * 4;  // Adjust multiplier as necessary for visibility
+    return magnitude * 3;  // Adjust multiplier as necessary for visibility
 }
 
 // Function to determine color based on depth
