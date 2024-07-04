@@ -26,7 +26,7 @@ The first activity was to visuzaliza an earthquake dataset following these steps
 1. Data Acquisition 
 The USGS gather data and stored different data types and in different format. The data get updated after every five minutes. The site was visited and data for the past 7 days ("All Earthquakes from the Past 7 Days" ) was select to be used for visualization.
 
-GeoJSON Sampleimage in image folder shows the summary page up page visitation. The URL directed to "All Earthquakes from the Past 7 Days" was used to pull the data in JSON format as shown imgae part_7_Days_Json image. 
+GeoJSON Sampleimage in image folder shows the summary page up page visitation. The URL directed to "All Earthquakes from the Past 7 Days" was used to pull the data in JSON format as shown image part_7_Days_Json image as shown below. 
 
 ![alt text](image-1.png)
 
