@@ -34,11 +34,11 @@ function createFeatures(earthquakeData) {
     addLegend(); 
 }
 
-// // Define a function that we want to run once for each feature in the features array.
-// // Give each feature a popup that describes the place and time of the earthquake.
-// function onEachFeature(feature, layer) {
-//     layer.bindPopup(`<h3>${feature.properties.place}</h3><hr><p>${new Date(feature.properties.time)}</p>`);
-// }
+// Define a function that we want to run once for each feature in the features array.
+// Give each feature a popup that describes the place and time of the earthquake.
+function onEachFeature(feature, layer) {
+    layer.bindPopup(`<h3>${feature.properties.place}</h3><hr><p>${new Date(feature.properties.time)}</p>`);
+}
 
 // // Function to create a customized marker for each earthquake feature
 // function createCustomMarker(feature, latlng) {
