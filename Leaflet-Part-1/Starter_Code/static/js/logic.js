@@ -53,16 +53,16 @@ function createCustomMarker(feature, latlng) {
         fillOpacity: 0.7
     });
 
-//     // Bind a tooltip to the marker
-//     marker.bindTooltip(
-//         `<b>Magnitude:</b> ${feature.properties.mag}<br>
-//          <b>Location:</b> ${feature.properties.place}<br>
-//          <b>Depth:</b> ${feature.geometry.coordinates[2]} km`,
-//         {permanent: false, direction: 'auto'}
-//     );
+    // Bind a tooltip to the marker
+    marker.bindTooltip(
+        `<b>Magnitude:</b> ${feature.properties.mag}<br>
+         <b>Location:</b> ${feature.properties.place}<br>
+         <b>Depth:</b> ${feature.geometry.coordinates[2]} km`,
+        {permanent: false, direction: 'auto'}
+    );
 
-//     return marker;
-// }
+    return marker;
+}
 
 // // Function to determine marker size based on earthquake magnitude
 // function getRadius(magnitude) {
