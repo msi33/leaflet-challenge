@@ -24,15 +24,15 @@ d3.json(url).then((data) => {
 
 
 
-// function createFeatures(earthquakeData) {
-//     // Create a GeoJSON layer that contains the features array on the earthquakeData object.
-//     let earthquakes = L.geoJSON(earthquakeData, {
-//         onEachFeature: onEachFeature,
-//         pointToLayer: createCustomMarker
-//     }).addTo(myMap);
-//     // Call the function to add the legend after creating the features
-//     addLegend(); 
-// }
+function createFeatures(earthquakeData) {
+    // Create a GeoJSON layer that contains the features array on the earthquakeData object.
+    let earthquakes = L.geoJSON(earthquakeData, {
+        onEachFeature: onEachFeature,
+        pointToLayer: createCustomMarker
+    }).addTo(myMap);
+    // Call the function to add the legend after creating the features
+    addLegend(); 
+}
 
 // // Define a function that we want to run once for each feature in the features array.
 // // Give each feature a popup that describes the place and time of the earthquake.
