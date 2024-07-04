@@ -79,33 +79,33 @@ function getColor(depth) {
                         '#39FF14' ; // Green for the shallowest
 }
 
-// // Function to add a legend to the map
-// function addLegend() {
-//     var legend = L.control({position: 'bottomright'});
+// Function to add a legend to the map
+function addLegend() {
+    var legend = L.control({position: 'bottomright'});
 
-//     legend.onAdd = function (map) {
-//         var div = L.DomUtil.create('div', 'info legend'),
-//             depths = [0, 10, 30, 50, 70, 90],
-//             labels = [],
-//             from, to;
+    legend.onAdd = function (map) {
+        var div = L.DomUtil.create('div', 'info legend'),
+            depths = [0, 10, 30, 50, 70, 90],
+            labels = [],
+            from, to;
 
-//         // Add title
-//         div.innerHTML += '<h4 style="margin-top: 0; margin-bottom: 10px;">Earthquake Depth Legend</h4>';
+        // Add title
+        div.innerHTML += '<h4 style="margin-top: 0; margin-bottom: 10px;">Earthquake Depth Legend</h4>';
 
-//         // Loop through our depth intervals and generate a label with a colored square for each interval
-//         for (var i = 0; i < depths.length; i++) {
-//             from = depths[i];
-//             to = depths[i + 1];
+        // Loop through our depth intervals and generate a label with a colored square for each interval
+        for (var i = 0; i < depths.length; i++) {
+            from = depths[i];
+            to = depths[i + 1];
 
-//             labels.push(
-//                 '<i style="background:' + getColor(from + 1) + '"></i> ' +
-//                 from + (to ? '&ndash;' + to + ' km' : '+ km'));
-//         }
+            labels.push(
+                '<i style="background:' + getColor(from + 1) + '"></i> ' +
+                from + (to ? '&ndash;' + to + ' km' : '+ km'));
+        }
 
-//         div.innerHTML += labels.join('<br>');
-//         return div;
-//     };
+        div.innerHTML += labels.join('<br>');
+        return div;
+    };
 
-//     legend.addTo(myMap);
-// }
+    legend.addTo(myMap);
+}
 
