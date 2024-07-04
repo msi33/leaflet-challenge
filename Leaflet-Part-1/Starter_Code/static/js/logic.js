@@ -6,11 +6,11 @@ var myMap = L.map('map', {
     zoom: 5
 });
 
-// // Add a base layer (tile layer) to the map
-// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-//     maxZoom: 18,
-//     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-// }).addTo(myMap);
+// Add a base layer (tile layer) to the map
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(myMap);
 
 
 // // Define the URL for your GeoJSON data
